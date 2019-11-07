@@ -1,17 +1,17 @@
 # annotation of PPMI WGS data that matches the IPS data
 
 ## Annotating full IPS PPMI cohort
-### Cornelis
-### 31 October 2019
-### working directory
-### ID = PPMI_IDS.txt
-### N=134
-### create output folder
+Cornelis
+31 October 2019
+working directory
+ID = PPMI_IDS.txt
+N=134
+create output folder
 
+## create vcf file per chromosome
 cd $PATH
 mkdir PPMI_IPS_annotation
 
-## create vcf file per chromosome
 for chnum in {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22};
 do
 	plink2 --pfile pd.june2019.chr$chnum.sqc --export vcf \
